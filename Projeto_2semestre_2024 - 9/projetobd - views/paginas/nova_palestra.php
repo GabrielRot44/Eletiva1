@@ -36,7 +36,7 @@
             $nome = $_POST["nome"];
             $evento = $_POST["evento_id"];
             $palestrante = $_POST["palestrante"];
-            $id = count($palestras);
+            $id = $palestras($max)["id"];
             
             $nova_palestra = [
                 'id' => $id,
